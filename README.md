@@ -3,10 +3,11 @@
 #### Technical Skills: Python, SQL, PyTorch, NLP, LLMs
 
 ## Education
-- B-Tech | Bakhtiyarpur College of Engineering, Patna(_August 2027_)								       		
+- B.Tech., CSE	| Bakhtiyarpur College of Engineering (_December 2027_)	
+
 
 ## Projects
-### BERT and XLNet Based Coustomer Sentiment Analysis tool
+### BERT and XLNet Based Customer Sentiment Analysis tool
 [LINK](https://www.mdpi.com/1424-8220/22/8/3048)
 
 Developed objective strategy for discovering optimal EEG bands based on signal power spectra using **Python**. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.
