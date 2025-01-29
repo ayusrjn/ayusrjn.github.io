@@ -3,7 +3,7 @@
 #### Technical Skills: Python, SQL, PyTorch, NLP, LLMs
 
 ## Education
-- Bachelors of Technology, Computer Science (Spesialization in IoT) | Bakhtiyarpur College of Engineering, Patna(_August 2027_)								       		
+- B-Tech | Bakhtiyarpur College of Engineering, Patna(_August 2027_)								       		
 
 ## Projects
 ### BERT and XLNet Based Coustomer Sentiment Analysis tool
