@@ -1,4 +1,3 @@
-## Machine Learning Engineer
 
 #### Technical Skills: Python, SQL, PyTorch, NLP, LLMs
 
