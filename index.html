@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ML Portfolio</title>
+    <style>
+        :root {
+            --bg: #1a1a1a;
+            --text: #e0e0e0;
+            --accent: #ff79c6;
+            --link: #8be9fd;
+            --card-bg: #282a36;
+        }
+
+        .light-theme {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #6200ea;
+            --link: #1e88e5;
+            --card-bg: #f5f5f5;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: var(--bg);
+            color: var(--text);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .project, .experience, .blog {
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            background: var(--card-bg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header style="padding: 4rem 1rem 2rem 1rem;">
+    <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">hi, i am neuralnomad!</h1>
+    <p style="margin: 0;">Hi, I'm Ayush Ranjan. I build intelligent systems and solve real-world problems using Machine Learning.</p>
+    <button class="theme-toggle" onclick="toggleTheme()" 
+        style="padding: 8px 16px;
+               border: 2px solid var(--accent);
+               background: transparent;
+               color: var(--text);
+               border-radius: 20px;
+               font-family: 'Courier New', monospace;
+               font-size: 0.9rem;
+               transition: all 0.3s ease;
+               box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        🌓 Toggle Theme
+    </button>
+</header>
+
+<div class="container">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>1. Railway Crack Detection</h3>
+        <p>Built a computer vision system to detect cracks in railway tracks using object detection models.</p>
+        <p><strong>Tech Stack:</strong> Python, TensorFlow, OpenCV</p>
+        <a href="https://github.com/yourusername/railway-crack-detection" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="project">
+        <h3>2. Emergency Gesture Detection</h3>
+        <p>Created a real-time system on Raspberry Pi to trigger emergency alerts via gestures.</p>
+        <p><strong>Tech Stack:</strong> Python, Django, Firebase</p>
+        <a href="https://github.com/yourusername/emergency-gesture" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="project">
+        <h3>3. Data Anonymization with ML</h3>
+        <p>Developed a model for anonymizing sensitive data while preserving its statistical properties.</p>
+        <p><strong>Tech Stack:</strong> Python, Scikit-learn</p>
+        <a href="https://github.com/yourusername/data-anonymization" target="_blank">View on GitHub →</a>
+    </div>
+
+    <h2>Experience</h2>
+
+    <div class="experience">
+        <h3>Machine Learning Intern</h3>
+        <p>Worked on optimizing deep learning models for image recognition tasks.</p>
+        <p><strong>Company:</strong> AI Solutions Ltd. | <strong>Duration:</strong> June 2023 - Sept 2023</p>
+    </div>
+
+    <div class="experience">
+        <h3>Research Assistant</h3>
+        <p>Contributed to research on privacy-preserving machine learning techniques.</p>
+        <p><strong>Institution:</strong> XYZ University | <strong>Duration:</strong> Jan 2023 - May 2023</p>
+    </div>
+
+    <h2>Blogs</h2>
+
+    <div class="blog">
+        <h3>Understanding the Central Limit Theorem</h3>
+        <p>An intuitive guide to understanding the Central Limit Theorem with practical examples.</p>
+        <a href="https://yourblogsite.com/clt" target="_blank">Read More →</a>
+    </div>
+
+    <div class="blog">
+        <h3>Building an Emergency Alert System</h3>
+        <p>A technical breakdown of building a real-time gesture-based alert system.</p>
+        <a href="https://yourblogsite.com/alert-system" target="_blank">Read More →</a>
+    </div>
+
+    <h2>Resume</h2>
+    <p><a href="resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+</div>
+
+<footer>
+    &copy; 2023 [Your Name]. All Rights Reserved.
+</footer>
+
+<script>
+    function toggleTheme() {
+        document.body.classList.toggle('light-theme');
+    }
+</script>
+
+</body>
+
+</html>
