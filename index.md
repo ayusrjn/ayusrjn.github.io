@@ -1,10 +1,20 @@
-# Welcome to My Page
+---
+layout: default
+title: Home
+---
 
-This is my new website hosted on GitHub Pages using the **Merlot** theme. 
+# Hello, I'm Ayush Ranjan
+**AI Engineer & MLOps Specialist**
 
-## About Me
-Here is a little bit of information about what I do.
+Welcome to my personal website! I specialize in building, deploying, and maintaining machine learning applications.
 
-* Project 1
-* Project 2
-* Project 3
+[📄 View My Resume](./Resume.pdf)
+
+### Navigation
+- [🚀 My Projects](./projects.html)
+- [📝 Blog](./blog.html)
+
+---
+
+### About Me
+I'm passionate about Artificial Intelligence and streamlining machine learning systems from development to production. Welcome to my internet home! Feel free to explore my projects and read my blog.
