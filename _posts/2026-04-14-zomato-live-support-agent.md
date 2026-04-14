@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Zomato Live Support Agent"
+date: 2026-04-14 10:00:00 +0530
+categories: general
+---
 ## I Built a Real-Time Voice AI Agent for Zomato Customer Support — Here's How It Works
 
 Customer support phone calls are painful. You wait on hold, repeat yourself three times, and half the time the agent can't even help. So I thought — what if I built an AI that could handle this entire thing over a live voice call, in real time?
