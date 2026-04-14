@@ -6,6 +6,8 @@ categories: general
 ---
 ## I Built a Real-Time Voice AI Agent for Zomato Customer Support — Here's How It Works
 
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Code-blue?logo=github)](https://github.com/ayusrjn/voice-server-agent) ⭐ Star it on GitHub!
+
 Customer support phone calls are painful. You wait on hold, repeat yourself three times, and half the time the agent can't even help. So I thought — what if I built an AI that could handle this entire thing over a live voice call, in real time?
 
 That's exactly what this project is. A voice-powered AI support agent for Zomato that you can talk to straight from the browser. No waiting. No hold music. Just a real conversation with an AI that can actually pull up your orders, process refunds, and file complaints while you're still on the call.
@@ -36,6 +38,9 @@ Here's what I used:
 
 ### How the Voice Call Actually Works
 
+![Voice Call Pipeline](https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/b424caa7f798c7d5437d76bc0b66c0b898e08840/_posts/img/voice_call_pipeline.svg)
+
+
 This is the interesting part. Let me break it down step by step.
 
 #### 1. You Click "Call"
@@ -57,6 +62,8 @@ The setup message tells Gemini: "You're a Zomato support agent. You have these t
 #### 4. Gemini Thinks and Responds
 
 Gemini processes the audio in real time. It can do three things:
+
+![Gemini Tools Execution Loop](https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/b424caa7f798c7d5437d76bc0b66c0b898e08840/_posts/img/gemini_tool_execution_loop.svg)
 
 - **Talk back** — It generates audio responses and sends them as base64-encoded PCM. My server decodes them and pushes the raw bytes to the browser.
 - **Call a tool** — If you ask about your order, Gemini decides to call `check_order_status`. The tool call comes as JSON. My server runs the function, gets the result from MongoDB, and sends it back to Gemini so it can formulate a spoken response.
@@ -137,6 +144,8 @@ Getting the AI to behave like a real support agent took a lot of prompt work. So
 ---
 
 ### Deployment
+
+![Deployment Architecture](https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/b424caa7f798c7d5437d76bc0b66c0b898e08840/_posts/img/deployment_architecture.svg)
 
 The frontend goes to Vercel. It's a Next.js app, so that's the natural choice. I set `MONGODB_URI` and `NEXT_PUBLIC_VOICE_AGENT_URL` as environment variables in the Vercel dashboard, and it just works.
 
