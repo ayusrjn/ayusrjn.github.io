@@ -7,7 +7,7 @@ categories: general
 
 # Designing Lambda: A Minimal Yet Powerful Coding Agent
 
-[![GitHub stars](https://img.shields.io/github/stars/ayusrjn/lambda-agent?style=social)](https://github.com/ayusrjn/lambda) ⭐ Star it on GitHub!
+[![GitHub stars](https://img.shields.io/github/stars/ayusrjn/lambda?style=social)](https://github.com/ayusrjn/lambda) ⭐ Star it on GitHub!
 
 
 In this article I will cover the entire designing process of the coding Agent lambda
