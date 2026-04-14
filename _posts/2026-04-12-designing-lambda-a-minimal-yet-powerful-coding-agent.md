@@ -19,7 +19,7 @@ Lambda is a minimal coding agent. You give it a prompt, and it can build differe
 Lambda is not just a model. It is a harness that uses tools like reading files, writing files, executing commands, and searching a repository to build software.
 
 ### How Lambda Works
-![Lambda Agent Loop]("https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/853e8b75851a14f28836d75513c9f1497c0d4a31/_posts/img/lambda_agent_loop.svg")
+![Lambda Agent Loop](https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/853e8b75851a14f28836d75513c9f1497c0d4a31/_posts/img/lambda_agent_loop.svg)
 
 Let's understand how Lambda works with a simple example.
 
@@ -59,7 +59,7 @@ Long-term memory is handled through three files:
 - **scratchpad.md** → used for notes, intermediate ideas, and extra details
 - **transcript.md** → logs every loop of the agent for traceability
 
-![Lambda Memory System]("https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/853e8b75851a14f28836d75513c9f1497c0d4a31/_posts/img/lambda_memory_system.svg")
+![Lambda Memory System](https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/853e8b75851a14f28836d75513c9f1497c0d4a31/_posts/img/lambda_memory_system.svg)
 
 
 These files persist across sessions. You can stop work and come back later, and the agent continues from where it left off.
@@ -88,7 +88,7 @@ There is one more layer of protection.
 
 Instead of doing everything in a single context, Lambda spawns sub-agents for smaller tasks. Each sub-agent gets only the minimum context it needs. Once done, it returns only the final result, not the full process.
 
-![Lambda Subagent Isolation](https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/853e8b75851a14f28836d75513c9f1497c0d4a31/_posts/img/lambda_subagent_isolation.svg")
+![Lambda Subagent Isolation](https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/853e8b75851a14f28836d75513c9f1497c0d4a31/_posts/img/lambda_subagent_isolation.svg)
 
 
 This keeps the main context clean and avoids unnecessary token usage.
@@ -99,7 +99,7 @@ Lambda also uses a search tool powered by grep.
 
 Instead of reading entire files to find a small piece of information, the agent can search across the repository and directly jump to relevant results. This saves a lot of tokens and reduces unnecessary context loading.
 
-![Lambda Search Vs Read]("https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/853e8b75851a14f28836d75513c9f1497c0d4a31/_posts/img/lambda_search_vs_read.svg")
+![Lambda Search Vs Read](https://raw.githubusercontent.com/ayusrjn/ayusrjn.github.io/853e8b75851a14f28836d75513c9f1497c0d4a31/_posts/img/lambda_search_vs_read.svg)
 
 
 The agent only reads the exact file or section it needs, instead of scanning everything blindly.
