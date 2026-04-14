@@ -1,0 +1,8 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* This specifically targets and hides your exact View on GitHub banner */
+#forkme_banner {
+    display: none !important;
+}
